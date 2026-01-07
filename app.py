@@ -119,7 +119,7 @@ if prompt := st.chat_input("Kirjoita tähän..."):
         try:
             # Luodaan chat-istunto
             chat = client.chats.create(
-                model="gemini-3-flash-preview", # Käytetään tätä vakaata uutta mallia
+                model="gemini-2.5-flash-lite", # Käytetään tätä vakaata uutta mallia
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_PROMPT,
                     temperature=0.7,
